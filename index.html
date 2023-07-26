@@ -25,6 +25,7 @@
         tailwind.config = {
             theme: {
                 extend: {
+
                     colors: {
                         'tomato': '#F85559',
                         'blackish': '#121212',
@@ -49,7 +50,8 @@
 
         <!-- navbar -->
         <nav class="mx-4 md:mx-16 lg:mx-20 xl:mx-28 mt-1 lg:mt-5">
-            <div class="navbar lg:bg-tomato text-blackish lg:text-white py-0 lg:py-4 px-0 lg:px-10 lg:rounded-full flex flex-row-reverse justify-between lg:flex-row">
+            <div
+                class="navbar lg:bg-tomato text-blackish lg:text-white py-0 lg:py-4 px-0 lg:px-10 lg:rounded-full flex flex-row-reverse justify-between lg:flex-row">
                 <div>
                     <div class="dropdown">
                         <label tabindex="0" class="btn lg:hidden">
@@ -83,12 +85,108 @@
                 </a>
                 <div class="hidden lg:flex navbar-end flex-1">
                     <form action="" class="hidden lg:flex bg-white h-10 rounded-full">
-                        <input type="text" class="flex-1 rounded-full focus:outline-none pl-5 text-black placeholder:text-[rgba(18,18,18,0.40)]" placeholder="Search here">
+                        <input type="text"
+                            class="flex-1 rounded-full focus:outline-none pl-5 text-black placeholder:text-[rgba(18,18,18,0.40)]"
+                            placeholder="Search here">
                         <button class="pr-2"><img src="images/icons/search.svg" alt=""></button>
                     </form>
                 </div>
             </div>
         </nav>
+
+        <!-- slider -->
+        <section class="mx-4 md:mx-16 lg:mx-20 xl:mx-28 lg:mt-5">
+            <div class="carousel w-full rounded-lg mt-4">
+                <!-- slide 1 -->
+                <div id="slide1" class="carousel-item relative w-full">
+                    <div class="hero" style="background-image: url('images/banner1.png');">
+                        <div class="hero-overlay bg-gradient-to-b from-black to-transparent bg-opacity-10"></div>
+                        <div class="hero-content text-center text-neutral-content">
+                            <div class="max-w-md py-5 md:py-10 lg:py-20">
+                                <h1
+                                    class="mb-5 text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold">
+                                    Exotic tastes at your doorstep</h1>
+                                <p class="mb-5 text-sm md:text-base xl:text-lg font-medium">We supply highly quality
+                                    organic products</p>
+                                <button
+                                    class="btn border-2 bg-tomato border-tomato text-white hover:text-tomato hover:border-tomato hover:bg-white">Shop
+                                    Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide4" class="btn btn-circle">❮</a>
+                        <a href="#slide2" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <!-- slide 2 -->
+                <div id="slide2" class="carousel-item relative w-full">
+                    <div class="hero" style="background-image: url('images/banner2.png');">
+                        <div class="hero-overlay bg-gradient-to-b from-black to-transparent bg-opacity-10"></div>
+                        <div class="hero-content text-center text-neutral-content">
+                            <div class="max-w-md py-5 md:py-10 lg:py-20">
+                                <h1
+                                    class="mb-5 text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold">
+                                    Exotic tastes at your doorstep</h1>
+                                <p class="mb-5 text-sm md:text-base xl:text-lg font-medium">We supply highly quality
+                                    organic products</p>
+                                <button
+                                    class="btn border-2 bg-tomato border-tomato text-white hover:text-tomato hover:border-tomato hover:bg-white">Shop
+                                    Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide1" class="btn btn-circle">❮</a>
+                        <a href="#slide3" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <!-- slide 3 -->
+                <div id="slide3" class="carousel-item relative w-full">
+                    <div class="hero" style="background-image: url('images/banner3.png');">
+                        <div class="hero-overlay bg-gradient-to-b from-black to-transparent bg-opacity-10"></div>
+                        <div class="hero-content text-center text-neutral-content">
+                            <div class="max-w-md py-5 md:py-10 lg:py-20">
+                                <h1
+                                    class="mb-5 text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold">
+                                    Exotic tastes at your doorstep</h1>
+                                <p class="mb-5 text-sm md:text-base xl:text-lg font-medium">We supply highly quality
+                                    organic products</p>
+                                <button
+                                    class="btn border-2 bg-tomato border-tomato text-white hover:text-tomato hover:border-tomato hover:bg-white">Shop
+                                    Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide2" class="btn btn-circle">❮</a>
+                        <a href="#slide4" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <!-- slide 4 -->
+                <div id="slide4" class="carousel-item relative w-full">
+                    <div class="hero" style="background-image: url('images/banner4.png');">
+                        <div class="hero-overlay bg-gradient-to-b from-black to-transparent bg-opacity-10"></div>
+                        <div class="hero-content text-center text-neutral-content">
+                            <div class="max-w-md py-5 md:py-10 lg:py-20">
+                                <h1
+                                    class="mb-5 text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold">
+                                    Exotic tastes at your doorstep</h1>
+                                <p class="mb-5 text-sm md:text-base xl:text-lg font-medium">We supply highly quality
+                                    organic products</p>
+                                <button
+                                    class="btn border-2 bg-tomato border-tomato text-white hover:text-tomato hover:border-tomato hover:bg-white">Shop
+                                    Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide3" class="btn btn-circle">❮</a>
+                        <a href="#slide1" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
     </header>
 
